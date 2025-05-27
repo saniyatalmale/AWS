@@ -63,3 +63,68 @@ SAN एक अलग नेटवर्क (जैसे Fibre Channel या iS
 - SAN तेज़ और block-level storage access देता है।  
 - बड़े systems और databases के लिए अच्छा है।  
 - महंगा होता है, पर बहुत ताक़तवर होता है।  
+
+
+
+
+
+
+
+
+
+
+
+🔐 Amazon Encryption aur KMS Key – आसान भाषा में (Hindi)
+🔸 Encryption kya hota hai?
+Encryption ek process hai jisme data ko aise code mein badal diya jata hai jo sirf authorized user hi samajh sake. Ye data ko secure banata hai.
+
+🔹 Mool (original) data ➡️ encrypted data (code ban gaya)
+
+🔸 Amazon KMS (Key Management Service) kya hai?
+AWS KMS (Key Management Service) ek managed service hai jo encryption ke liye keys banata, use karta, aur secure karta hai.
+
+👉 Simple shabdon mein:
+KMS ek digital locker jaisa hai jisme aapki encryption keys rakhi hoti hain. Jab aapko data encrypt/decrypt karna ho, aap KMS se us key ka use karte ho.
+
+📦 Daily Life Example (Hindi):
+🛍️ Example: Online Shopping Password
+Socho aapne Amazon pe shopping ki aur apna credit card number save kiya.
+
+Encryption kya karta hai?
+Card number ko unreadable format mein badal deta hai (so hackers can’t read it).
+
+KMS Key kya karti hai?
+Wo secret chabi hai jo us encrypted data ko wapas original mein badal sakti hai (jab aap payment karte ho).
+
+🔐 Sirf Amazon (authorized system) ke paas wo chabi hoti hai. Aapka data safe hai.
+
+🔐 Amazon Encryption and KMS Key – Simple English
+🔸 What is Encryption?
+Encryption is the process of converting readable data into unreadable code to protect it from unauthorized access.
+
+🔹 Plain data ➡️ Encrypted (locked) data
+
+🔸 What is AWS KMS (Key Management Service)?
+AWS KMS is a managed service that creates, stores, and manages the keys used for encryption and decryption.
+
+👉 In simple words:
+KMS is like a digital key locker that safely stores the keys used to lock (encrypt) and unlock (decrypt) your data.
+
+📦 Daily Life Example (English):
+🛍️ Example: Online Shopping Password
+Suppose you shop on Amazon and save your credit card number.
+
+What does Encryption do?
+It changes your card number into a secret code so no one can understand it.
+
+What does the KMS key do?
+It is the secret key that can unlock the code (decrypt) when needed during a payment.
+
+🔐 Only Amazon (the authorized system) has the key stored in KMS. So your data is safe.
+
+🔑 Summary Table
+Concept	Hindi Explanation	English Explanation
+Encryption	Data ko secret code mein badalna	Turn readable data into unreadable form
+KMS Key	Wo chabi jo data ko unlock/lock karne ke kaam aati hai	A key used to encrypt/decrypt the data
+KMS Service	Keys ko manage aur secure karne ki AWS service	AWS service to manage and secure the keys
+
