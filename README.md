@@ -169,3 +169,75 @@ CDN server location closer to users to reduce delay.
 
 ## 32. Latency
 Delay in data transfer. Lower latency = faster response.
+
+
+
+# AWS Placement Groups (हिंदी + English)
+
+## 🔸 What is a Placement Group? (Placement Group क्या है?)
+
+**English:**  
+A Placement Group in AWS is used to place EC2 instances in a specific way for better performance or high availability.
+
+**Hindi:**  
+AWS में Placement Group का उपयोग EC2 instances को एक खास तरीके से रखने के लिए किया जाता है ताकि performance बेहतर हो या system ज़्यादा सुरक्षित रहे।
+
+---
+
+## 🔹 Types of Placement Groups (Placement Group के प्रकार)
+
+### 1. ✅ Cluster Placement Group
+
+**English:**  
+- All EC2 instances are placed very close to each other.
+- Best for fast communication, low latency, high speed.
+- Used for Big Data, gaming, HPC.
+- **Limitation:** All are in one zone — if it fails, all are affected.
+
+**Hindi:**  
+- सभी instances को बहुत पास-पास रखा जाता है।
+- तेज़ स्पीड और कम देरी (low latency) मिलती है।
+- उपयोग: Big Data, Gaming, HPC जैसे कामों में।
+- **कमज़ोरी:** एक ही ज़ोन में होते हैं — एक ज़ोन डाउन हुआ तो सब बंद हो सकते हैं।
+
+---
+
+### 2. ✅ Spread Placement Group
+
+**English:**  
+- Each EC2 instance is placed on different hardware.
+- Best for critical applications — more protection.
+- **Limit:** Max 7 instances per AZ.
+
+**Hindi:**  
+- हर instance को अलग-अलग server पर रखा जाता है।
+- ज़्यादा सुरक्षा मिलती है — एक failure का असर बाकी पर नहीं पड़ता।
+- **सीमा:** एक Availability Zone में केवल 7 instances रख सकते हैं।
+
+---
+
+### 3. ✅ Partition Placement Group
+
+**English:**  
+- Instances are divided into groups (called partitions), each placed on separate racks.
+- Best for big data systems like Hadoop, Kafka.
+- Helps in fault isolation.
+
+**Hindi:**  
+- Instances को group (partition) में बांटा जाता है, हर group अलग hardware (rack) पर होता है।
+- बड़े systems (Hadoop, Kafka) के लिए बेहतर।
+- Fault isolate करने में मदद मिलती है।
+
+---
+
+## 🔸 Easy Summary Table (सरल सारांश तालिका)
+
+| Type       | Placement Style (कैसे रखे जाते हैं) | Use Case (उपयोग)            |
+|------------|-------------------------------------|------------------------------|
+| Cluster    | Close together (पास-पास)            | High speed, low latency work |
+| Spread     | Far apart (दूर-दूर)                 | High availability, safety    |
+| Partition  | Grouped (ग्रुप में, अलग-अलग)        | Big data, fault isolation    |
+
+---
+
+Let me know if you want me to save and download this `.md` file for you!
