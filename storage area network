@@ -1,0 +1,65 @@
+# Storage Area Network (SAN) - हिंदी + English
+
+## 🔸 What is SAN? (SAN क्या होता है?)
+
+**English:**  
+A Storage Area Network (SAN) is a high-speed network that connects storage devices (like hard drives) to servers. It allows multiple servers to access the same storage as if it were their own local disk.
+
+**Hindi:**  
+Storage Area Network (SAN) एक तेज़ नेटवर्क होता है जो storage devices (जैसे hard drives) को servers से जोड़ता है। इससे कई servers एक ही storage को ऐसे access कर सकते हैं जैसे वो उनकी खुद की local disk हो।
+
+---
+
+## 🔹 Why use SAN? (SAN का उपयोग क्यों करें?)
+
+**English:**
+- Centralized storage management  
+- Fast data access and transfer  
+- Scalability (easy to add more storage)  
+- High performance and availability  
+
+**Hindi:**
+- एक जगह से पूरी storage को manage करना  
+- तेज़ी से data access और transfer करना  
+- ज़रूरत पड़ने पर storage बढ़ाना आसान  
+- अच्छा performance और availability  
+
+---
+
+## 🔸 How SAN Works (SAN कैसे काम करता है?)
+
+**English:**  
+SAN uses a separate network (usually Fibre Channel or iSCSI) to connect storage devices and servers. It works like this:  
+1. Servers send data requests through SAN.  
+2. SAN delivers data from storage back to the server.  
+3. Applications treat it like a local disk.  
+
+**Hindi:**  
+SAN एक अलग नेटवर्क (जैसे Fibre Channel या iSCSI) का उपयोग करता है:  
+1. Server data का request भेजता है।  
+2. SAN से storage data वापस server को देता है।  
+3. Application उसे local disk की तरह इस्तेमाल करती है।  
+
+---
+
+## 🔹 SAN vs NAS (SAN और NAS में अंतर)
+
+| Feature          | SAN                          | NAS                          |
+|------------------|-------------------------------|-------------------------------|
+| Network Type     | Block-level                   | File-level                    |
+| Speed            | Faster                        | Slower                        |
+| Use Case         | Databases, high-speed apps    | File sharing, backups         |
+| Protocol         | Fibre Channel, iSCSI          | NFS, SMB                      |
+
+---
+
+## 🔸 Summary (सारांश)
+
+- SAN is used for fast, block-level storage access.  
+- Best for large enterprise apps, databases, and virtualization.  
+- Expensive but powerful.
+
+**Hindi:**  
+- SAN तेज़ और block-level storage access देता है।  
+- बड़े systems और databases के लिए अच्छा है।  
+- महंगा होता है, पर बहुत ताक़तवर होता है।  
