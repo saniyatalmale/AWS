@@ -1,0 +1,1082 @@
+**1. What is an Operating System?**
+
+#### ✅ Detailed Version (English):
+
+An operating system (OS) is a system software that acts as an intermediary between computer hardware and the user. It manages the hardware (CPU, memory, disk, input/output devices) and provides services that allow applications to run efficiently. The OS handles tasks like memory management, process scheduling, device control, file system operations, and security.
+
+Examples: Windows, Linux, macOS, Unix.
+
+#### ✅ Short Version (English):
+
+An operating system is software that controls hardware and manages system resources to allow software to run.
+
+#### ✅ Hindi Explanation:
+
+ऑपरेटिंग सिस्टम एक सिस्टम सॉफ्टवेयर है जो कंप्यूटर हार्डवेयर और यूज़र के बीच एक माध्यम के रूप में काम करता है। यह हार्डवेयर और सॉफ्टवेयर दोनों को मैनेज करता है।
+
+---
+
+### **2. Difference between Linux and Windows**
+
+#### ✅ Detailed Version (English):
+
+| Feature               | Linux                    | Windows                        |
+| --------------------- | ------------------------ | ------------------------------ |
+| **License**           | Open-source (Free)       | Proprietary (Paid)             |
+| **Customization**     | Highly customizable      | Limited customization          |
+| **Security**          | More secure              | More vulnerable to viruses     |
+| **User Interface**    | CLI and GUI              | Mostly GUI                     |
+| **Usage**             | Developers, servers      | General users, office PCs      |
+| **File System**       | Ext3/Ext4                | NTFS                           |
+| **Community Support** | Strong community support | Official and community support |
+
+#### ✅ Short Version (English):
+
+* Linux is open-source, free, and used in servers.
+* Windows is commercial, user-friendly, and widely used on personal computers.
+
+#### ✅ Hindi Explanation:
+
+* Linux एक ओपन-सोर्स और फ्री ऑपरेटिंग सिस्टम है, ज्यादातर सर्वर में यूज़ होता है।
+* Windows एक पेड ऑपरेटिंग सिस्टम है, जिसे पर्सनल कंप्यूटर पर ज्यादा यूज़ किया जाता है।
+
+📌 **Image for Linux vs Windows Difference** – Please let me know if you want a comparison chart image as well. I can create and share it.
+
+---
+
+### **3. What is Open Source?**
+
+#### ✅ Detailed Version (English):
+
+Open-source software is software with publicly available source code. This means anyone can view, modify, enhance, or distribute it. Open-source promotes transparency, collaboration, and innovation. Examples include Linux, Apache, Git, and MySQL.
+
+#### ✅ Short Version (English):
+
+Open-source software allows users to access, modify, and distribute the source code freely.
+
+#### ✅ Hindi Explanation:
+
+ओपन-सोर्स सॉफ्टवेयर वो होता है जिसका सोर्स कोड पब्लिक को फ्री में उपलब्ध होता है। कोई भी इसे देख सकता है, बदल सकता है और शेयर कर सकता है।
+
+---
+
+### **4. Explain Linux Architecture**
+
+#### ✅ Detailed Version (English):
+
+Linux architecture has four main components:
+
+1. **Hardware** – Physical components like CPU, RAM, etc.
+2. **Kernel** – The core of Linux that manages hardware, memory, processes, and system calls.
+3. **Shell** – Interface between user and kernel. Takes user commands and sends them to the kernel.
+4. **Utilities/Applications** – System tools and software used by users to interact with the system.
+
+#### ✅ Short Version (English):
+
+Linux architecture includes hardware, kernel, shell, and utilities to manage the system.
+
+#### ✅ Hindi Explanation:
+
+Linux की संरचना में हार्डवेयर, कर्नेल, शेल और यूटिलिटी टूल्स शामिल होते हैं। कर्नेल सिस्टम को कंट्रोल करता है और शेल यूज़र से कमांड लेता है।
+
+---
+
+### **5. What is Virtualization?**
+
+#### ✅ Detailed Version (English):
+
+Virtualization is the process of creating virtual versions of physical resources such as servers, storage, or networks. It allows one physical system to host multiple virtual machines (VMs), each running its own OS. This improves resource utilization, isolation, and flexibility.
+
+#### ✅ Short Version (English):
+
+Virtualization allows multiple virtual machines to run on a single physical machine.
+
+#### ✅ Hindi Explanation:
+
+Virtualization एक तकनीक है जिसमें एक फिजिकल सिस्टम पर कई वर्चुअल मशीनें चलाई जाती हैं। इससे रिसोर्सेस का बेहतर उपयोग होता है।
+
+---
+
+### **6. Explain Hypervisor and its Types**
+
+#### ✅ Detailed Version (English):
+
+A **hypervisor** is software that enables virtualization by creating and managing multiple virtual machines (VMs) on a single physical system. Each VM has its own OS and runs independently.
+
+**Types of Hypervisors:**
+
+* **Type 1 (Bare-metal):** Runs directly on hardware without any host OS. Example: VMware ESXi, Microsoft Hyper-V, Xen.
+* **Type 2 (Hosted):** Runs on top of a host operating system. Example: VirtualBox, VMware Workstation.
+
+#### ✅ Short Version (English):
+
+A hypervisor manages virtual machines.
+
+* Type 1: Runs directly on hardware.
+* Type 2: Runs on host OS.
+
+#### ✅ Hindi Explanation:
+
+Hypervisor एक सॉफ्टवेयर है जो वर्चुअल मशीनें बनाने और चलाने का काम करता है।
+
+* Type 1: हार्डवेयर पर डायरेक्ट चलता है।
+* Type 2: ओएस के ऊपर चलता है।
+
+---
+
+### **7. What is Shell, its Types, and How to Check Current Shell?**
+
+#### ✅ Detailed Version (English):
+
+A **shell** is a command-line interpreter that allows users to interact with the operating system. It takes commands from the user and passes them to the kernel.
+
+**Types of Shells:**
+
+* **Bash (Bourne Again SHell)** – Most common
+* **Sh (Bourne Shell)**
+* **Csh (C Shell)**
+* **Ksh (Korn Shell)**
+* **Zsh (Z Shell)**
+
+**Check Current Shell Command:**
+
+```bash
+echo $SHELL
+```
+
+#### ✅ Short Version (English):
+
+A shell is a program that executes user commands.
+To check shell: `echo $SHELL`
+
+#### ✅ Hindi Explanation:
+
+Shell एक प्रोग्राम है जो यूज़र की कमांड को OS तक पहुंचाता है।
+अपना shell देखने के लिए: `echo $SHELL`
+
+---
+
+### **8. What is Kernel and Command to Check Kernel Info?**
+
+#### ✅ Detailed Version (English):
+
+The **kernel** is the core of the operating system. It manages CPU, memory, devices, and system calls. It acts as a bridge between the hardware and software.
+
+**Command to Check Kernel Version:**
+
+```bash
+uname -r
+```
+
+or
+
+```bash
+uname -a
+```
+
+#### ✅ Short Version (English):
+
+The kernel is the core of the OS.
+To check kernel: `uname -r`
+
+#### ✅ Hindi Explanation:
+
+Kernel OS का मुख्य भाग होता है जो हार्डवेयर और सॉफ्टवेयर के बीच इंटरफेस का काम करता है।
+Kernel वर्ज़न देखने के लिए: `uname -r`
+
+---
+
+### **9. Command to Check OS Information**
+
+#### ✅ Detailed Version (English):
+
+To view the Linux OS details, use:
+
+```bash
+cat /etc/os-release
+```
+
+or
+
+```bash
+lsb_release -a
+```
+
+This shows the name, version, and codename of the OS.
+
+#### ✅ Short Version (English):
+
+Use `cat /etc/os-release` to see OS name and version.
+
+#### ✅ Hindi Explanation:
+
+Linux OS की जानकारी देखने के लिए कमांड है:
+`cat /etc/os-release`
+
+---
+
+### **10. Command to Check Available Memory**
+
+#### ✅ Detailed Version (English):
+
+To check memory usage in Linux, use:
+
+```bash
+free -h
+```
+
+It displays total, used, and free memory in human-readable format (`-h`).
+
+Alternative:
+
+```bash
+top
+```
+
+(live view with memory stats)
+
+#### ✅ Short Version (English):
+
+Use `free -h` to check memory status.
+
+#### ✅ Hindi Explanation:
+
+मेमोरी की स्थिति देखने के लिए कमांड है:
+`free -h`
+(यह रैम की टोटल, यूज़ और फ्री वैल्यू दिखाता है)
+
+---
+Perfect, Saniya! Let’s continue with the next set: **Questions 11 to 15** — each with **Detailed Version → Short Version → Hindi Explanation**.
+
+---
+
+### **11. Command to Check Storage or Disk Info**
+
+#### ✅ Detailed Version (English):
+
+To check disk usage and storage info, use:
+
+```bash
+df -h
+```
+
+* `df` stands for "disk filesystem"
+* `-h` means human-readable (shows in GB/MB)
+
+For block-level disk details:
+
+```bash
+lsblk
+```
+
+#### ✅ Short Version (English):
+
+Use `df -h` for disk usage and `lsblk` for device info.
+
+#### ✅ Hindi Explanation:
+
+स्टोरेज जानकारी देखने के लिए:
+
+* `df -h`: डिस्क यूज़ेज़ दिखाता है
+* `lsblk`: स्टोरेज डिवाइसेज़ की डिटेल दिखाता है
+
+---
+
+### **12. Command to Check Size of File/Directory**
+
+#### ✅ Detailed Version (English):
+
+To check size of a **file or directory**:
+
+```bash
+du -sh filename_or_directory
+```
+
+* `du` = disk usage
+* `-s` = summary
+* `-h` = human-readable
+
+For current directory size:
+
+```bash
+du -sh .
+```
+
+#### ✅ Short Version (English):
+
+Use `du -sh dir_or_file` to see size.
+
+#### ✅ Hindi Explanation:
+
+फाइल या डायरेक्टरी का साइज देखने के लिए:
+
+```bash
+du -sh <नाम>
+```
+
+---
+
+### **13. Explain Modes of Vim Editor**
+
+#### ✅ Detailed Version (English):
+
+Vim has **3 main modes**:
+
+1. **Normal Mode** – For navigation and commands (default mode).
+2. **Insert Mode** – For editing/typing text (press `i` to enter).
+3. **Command Mode** – To save/quit etc. (press `:` in normal mode).
+
+**Common commands:**
+
+* `i`: insert mode
+* `Esc`: back to normal mode
+* `:w`: save
+* `:q`: quit
+* `:wq`: save and quit
+
+#### ✅ Short Version (English):
+
+Vim has 3 modes – Normal, Insert, and Command.
+Use `i` to insert, `:wq` to save and quit.
+
+#### ✅ Hindi Explanation:
+
+Vim editor के तीन मोड होते हैं:
+
+1. Normal Mode – नेविगेशन
+2. Insert Mode – लिखने के लिए (`i`)
+3. Command Mode – सेव/क्विट (`:wq`)
+
+---
+
+### **14. Difference Between `adduser` and `useradd`**
+
+#### ✅ Detailed Version (English):
+
+| Feature       | `adduser`                  | `useradd`         |
+| ------------- | -------------------------- | ----------------- |
+| Type          | High-level script          | Low-level command |
+| User-friendly | Yes (prompts for password) | No (needs flags)  |
+| Home Dir      | Automatically created      | Needs `-m` option |
+| Interactive   | Yes                        | No                |
+
+#### ✅ Short Version (English):
+
+* `adduser`: easier, interactive
+* `useradd`: requires options
+
+#### ✅ Hindi Explanation:
+
+* `adduser`: यूज़र बनाना आसान, ऑटोमैटिक होम डाइरेक्टरी बनाता है
+* `useradd`: मैन्युअल है, फ्लैग्स लगाना पड़ता है
+
+---
+
+### **15. Explain Skeleton Files**
+
+#### ✅ Detailed Version (English):
+
+**Skeleton files** are default configuration files copied to a new user’s home directory when the user is created. They are stored in:
+
+```bash
+/etc/skel
+```
+
+Examples: `.bashrc`, `.profile`, `.bash_logout`
+
+When a new user is created, these files are copied automatically to `/home/username`.
+
+#### ✅ Short Version (English):
+
+Skeleton files in `/etc/skel` are copied to new users' home directories.
+
+#### ✅ Hindi Explanation:
+
+Skeleton files `/etc/skel` में होते हैं और नए यूज़र के होम डायरेक्टरी में कॉपी हो जाते हैं, जैसे `.bashrc`, `.profile`।
+
+---
+
+Awesome, Saniya! Let’s now continue with **questions 16 to 20** — each with **Detailed Version → Short Version → Hindi Explanation**.
+
+---
+
+### **16. Explain Fields of `/etc/passwd` File**
+
+#### ✅ Detailed Version (English):
+
+The `/etc/passwd` file stores user account information. Each line represents one user and contains 7 fields separated by colons `:`:
+
+```
+username:password:UID:GID:comment:home_directory:shell
+```
+
+**Example:**
+
+```
+saniya:x:1001:1001:Saniya:/home/saniya:/bin/bash
+```
+
+| Field           | Meaning                                |
+| --------------- | -------------------------------------- |
+| username        | Login name                             |
+| password        | `x` means password is in `/etc/shadow` |
+| UID             | User ID                                |
+| GID             | Group ID                               |
+| comment         | Full name or description               |
+| home\_directory | Default login directory                |
+| shell           | Default shell                          |
+
+#### ✅ Short Version (English):
+
+7 fields in `/etc/passwd`: username, password, UID, GID, comment, home dir, shell.
+
+#### ✅ Hindi Explanation:
+
+`/etc/passwd` फाइल में यूज़र की डिटेल्स होती हैं:
+
+1. यूज़रनेम
+2. पासवर्ड (`x` मतलब `/etc/shadow` में है)
+3. UID
+4. GID
+5. कमेंट
+6. होम डाइरेक्टरी
+7. शेल
+
+---
+
+### **17. How to Check Which Group a User Belongs To?**
+
+#### ✅ Detailed Version (English):
+
+You can use either of these commands:
+
+```bash
+groups username
+```
+
+or
+
+```bash
+id username
+```
+
+Example:
+
+```bash
+groups saniya
+```
+
+This will show all groups (primary and secondary) the user is part of.
+
+#### ✅ Short Version (English):
+
+Use `groups username` or `id username` to check group.
+
+#### ✅ Hindi Explanation:
+
+यूज़र किस ग्रुप में है देखने के लिए:
+
+```bash
+groups <username>
+```
+
+या
+
+```bash
+id <username>
+```
+
+---
+
+### **18. Explain File Types in Linux**
+
+#### ✅ Detailed Version (English):
+
+Linux supports multiple file types:
+
+| Type              | Symbol | Description                  |
+| ----------------- | ------ | ---------------------------- |
+| Regular file      | `-`    | Text, binaries, etc.         |
+| Directory         | `d`    | Folders                      |
+| Symbolic link     | `l`    | Shortcut to another file     |
+| Block device      | `b`    | Hardware storage (e.g., HDD) |
+| Character device  | `c`    | Devices (e.g., keyboard)     |
+| Socket            | `s`    | IPC (Inter-process Comm)     |
+| FIFO (Named Pipe) | `p`    | Special file for processes   |
+
+Check file type:
+
+```bash
+ls -l
+```
+
+#### ✅ Short Version (English):
+
+Types: Regular (-), Dir (d), Link (l), Block (b), Char (c), Socket (s), Pipe (p)
+
+#### ✅ Hindi Explanation:
+
+Linux में कई फाइल टाइप्स होती हैं:
+
+* `-` : नॉर्मल फाइल
+* `d` : डायरेक्टरी
+* `l` : लिंक
+* `b` : ब्लॉक डिवाइस
+* `c` : कैरेक्टर डिवाइस
+* `s` : सॉकेट
+* `p` : पाइप
+
+---
+
+### **19. Difference Between Hard Link and Soft Link**
+
+#### ✅ Detailed Version (English):
+
+| Feature        | Hard Link                       | Soft Link (Symbolic Link)       |
+| -------------- | ------------------------------- | ------------------------------- |
+| Points to      | File data (inode)               | File name/path                  |
+| File removed   | Original file can be deleted    | Link breaks if original deleted |
+| Across FS      | Not allowed across file systems | Allowed                         |
+| Symbol in `ls` | No special symbol               | Shows as `l` and `->`           |
+
+Create:
+
+```bash
+ln original.txt hardlink.txt      # Hard
+ln -s original.txt softlink.txt   # Soft
+```
+
+#### ✅ Short Version (English):
+
+Hard Link = another name for file
+Soft Link = shortcut (breaks if original is deleted)
+
+#### ✅ Hindi Explanation:
+
+* **Hard Link**: फाइल का दूसरा नाम (same inode)
+* **Soft Link**: shortcut जैसा होता है (original हटे तो टूटेगा)
+
+---
+
+### **20. How to Change Ownership of File/Directory?**
+
+#### ✅ Detailed Version (English):
+
+Use the `chown` command:
+
+```bash
+chown newuser file.txt
+```
+
+To change both user and group:
+
+```bash
+chown newuser:newgroup file.txt
+```
+
+To change ownership recursively (for directories):
+
+```bash
+chown -R newuser:newgroup directory/
+```
+
+#### ✅ Short Version (English):
+
+Use `chown user:group file` to change ownership.
+
+#### ✅ Hindi Explanation:
+
+फाइल या डायरेक्टरी का ओनर बदलने के लिए:
+
+```bash
+chown <user>:<group> <file>
+```
+Great going, Saniya! Now let's cover **Questions 21 to 25** — again with **Detailed Version → Short Version → Hindi Explanation**.
+
+---
+
+### **21. How to Set Permissions Using Symbolic and Numeric Modes?**
+
+#### ✅ Detailed Version (English):
+
+There are two ways to set file/folder permissions in Linux:
+
+#### ➤ Symbolic Mode:
+
+```bash
+chmod u+x file.txt        # Add execute to user
+chmod g-w file.txt        # Remove write from group
+chmod o=r file.txt        # Set read-only for others
+```
+
+* `u` = user, `g` = group, `o` = others
+* `+` = add, `-` = remove, `=` = assign
+
+#### ➤ Numeric Mode:
+
+Each permission has a value:
+
+* r = 4, w = 2, x = 1
+
+Examples:
+
+* `chmod 755 file.txt` → rwxr-xr-x
+* `chmod 644 file.txt` → rw-r--r--
+
+#### ✅ Short Version (English):
+
+* Symbolic: `chmod u+x file`
+* Numeric: `chmod 755 file`
+
+#### ✅ Hindi Explanation:
+
+**दो तरीकों से परमिशन सेट करते हैं:**
+
+✅ Symbolic:
+
+* `chmod u+x file` → यूज़र को एक्सिक्यूट
+
+✅ Numeric:
+
+* `chmod 755 file` → rwxr-xr-x
+
+---
+
+### **22. What is umask?**
+
+#### ✅ Detailed Version (English):
+
+**umask** (User Mask) defines default permissions **subtracted** when a new file or folder is created.
+
+* Default permissions:
+
+  * File: `666` (rw-rw-rw-)
+  * Dir: `777` (rwxrwxrwx)
+
+If umask is `022`:
+
+* File → `644` (rw-r--r--)
+* Dir → `755` (rwxr-xr-x)
+
+Check umask:
+
+```bash
+umask
+```
+
+#### ✅ Short Version (English):
+
+umask sets default file/dir permissions by subtracting from 666/777.
+
+#### ✅ Hindi Explanation:
+
+**umask** नया फाइल/डायरेक्टरी बनाने पर डिफॉल्ट परमिशन तय करता है।
+उदाहरण: umask 022 → फाइल 644, डायरेक्टरी 755
+
+---
+
+### **23. Default Permissions for Root User for File/Directory**
+
+#### ✅ Detailed Version (English):
+
+By default:
+
+* File → 666 (rw-rw-rw-)
+* Directory → 777 (rwxrwxrwx)
+
+But actual permissions depend on the **umask value**, usually `0022`:
+
+So effective permissions:
+
+* File: 666 - 022 = **644**
+* Dir: 777 - 022 = **755**
+
+Root can override any permission.
+
+#### ✅ Short Version (English):
+
+Root default:
+
+* File: 644
+* Directory: 755
+
+#### ✅ Hindi Explanation:
+
+Root के लिए डिफॉल्ट परमिशन:
+
+* फाइल: 644
+* डायरेक्टरी: 755
+  (umask 022 के कारण)
+
+---
+
+### **24. Default Permissions for Local User for File/Directory**
+
+#### ✅ Detailed Version (English):
+
+Same concept applies to regular/local users.
+
+Default umask for users is usually `002` or `022`:
+
+* If `002` → File: 664, Dir: 775
+* If `022` → File: 644, Dir: 755
+
+Check with:
+
+```bash
+umask
+```
+
+#### ✅ Short Version (English):
+
+Local user default = file 644, dir 755 (usually)
+
+#### ✅ Hindi Explanation:
+
+Local user के लिए डिफॉल्ट परमिशन:
+
+* फाइल: 644
+* डायरेक्टरी: 755
+  (depends on umask)
+
+---
+
+### **25. Explain Crontab Fields**
+
+#### ✅ Detailed Version (English):
+
+Crontab is used to schedule tasks. It has **5 time fields + 1 command**:
+
+```
+*  *  *  *  *  command
+|  |  |  |  |
+|  |  |  |  +----- Day of the week (0-6, Sunday=0)
+|  |  |  +-------- Month (1-12)
+|  |  +----------- Day of month (1-31)
+|  +-------------- Hour (0-23)
++----------------- Minute (0-59)
+```
+
+**Example:**
+
+```bash
+0 5 * * 1 /home/saniya/backup.sh
+```
+
+→ Runs every Monday at 5:00 AM
+
+#### ✅ Short Version (English):
+
+Fields: min hour day month weekday command
+
+#### ✅ Hindi Explanation:
+
+Crontab में 6 चीज़ें होती हैं:
+
+1. मिनट
+2. घंटा
+3. महीने का दिन
+4. महीना
+5. हफ्ते का दिन
+6. कमांड
+
+उदाहरण:
+
+```bash
+0 0 * * * cmd
+```
+
+→ हर दिन रात 12 बजे रन होगा।
+
+Perfect, Saniya! We've completed questions **1 to 25**. Let's now continue with the remaining:
+
+---
+
+## ✅ Questions 26 to 30 — Detailed + Short + Hindi
+
+---
+
+### **26. Explain `top` Command**
+
+#### ✅ Detailed Version:
+
+The `top` command displays real-time system information:
+
+* Running processes
+* CPU & memory usage
+* Process IDs (PID)
+* Uptime and load average
+
+To run:
+
+```bash
+top
+```
+
+Useful keys:
+
+* `q` → quit
+* `k` → kill a process
+* `P` → sort by CPU
+* `M` → sort by memory
+
+#### ✅ Short Version:
+
+`top` shows live CPU, memory, and process usage.
+
+#### ✅ Hindi:
+
+`top` कमांड CPU, मेमोरी और प्रोसेस की लाइव जानकारी दिखाती है।
+प्रेस `q` बंद करने के लिए।
+
+---
+
+### **27. Explain `ps` Command**
+
+#### ✅ Detailed Version:
+
+`ps` (process status) displays information about currently running processes.
+
+Basic usage:
+
+```bash
+ps         # current shell processes
+ps -e      # all processes
+ps aux     # detailed info with user, CPU, memory
+```
+
+#### ✅ Short Version:
+
+`ps` shows currently running processes.
+
+#### ✅ Hindi:
+
+`ps` कमांड से आप रन हो रहे प्रोसेस देख सकते हैं।
+
+---
+
+### **28. Explain `grep` Command**
+
+#### ✅ Detailed Version:
+
+`grep` is used to search text patterns in files.
+
+Examples:
+
+```bash
+grep "error" logfile.txt       # find 'error' in file
+ps aux | grep ssh              # find running ssh process
+grep -i "saniya" data.txt      # case-insensitive search
+```
+
+#### ✅ Short Version:
+
+`grep` searches for a pattern in text/files.
+
+#### ✅ Hindi:
+
+`grep` से आप किसी शब्द या पैटर्न को फाइल में ढूंढ सकते हैं।
+
+---
+
+### **29. How to Archive, Compress, and Extract Files?**
+
+#### ✅ Detailed Version:
+
+**To archive (tar):**
+
+```bash
+tar -cvf file.tar folder/
+```
+
+**To compress (gzip):**
+
+```bash
+gzip file.txt
+```
+
+**To extract:**
+
+```bash
+tar -xvf file.tar
+gunzip file.txt.gz
+```
+
+**To archive + compress:**
+
+```bash
+tar -czvf file.tar.gz folder/
+tar -xzvf file.tar.gz
+```
+
+#### ✅ Short Version:
+
+Use `tar` for archive, `gzip` for compress, `gunzip` to extract.
+
+#### ✅ Hindi:
+
+* Archive: `tar -cvf`
+* Compress: `gzip`
+* Extract: `tar -xvf` या `gunzip`
+
+---
+
+### **30. Explain OSI Model**
+
+#### ✅ Detailed Version:
+
+The **OSI Model** is a 7-layer model for network communication.
+
+| Layer No | Name         | Function                    |
+| -------- | ------------ | --------------------------- |
+| 7        | Application  | User interface              |
+| 6        | Presentation | Data format, encryption     |
+| 5        | Session      | Start/end connections       |
+| 4        | Transport    | Reliable delivery (TCP/UDP) |
+| 3        | Network      | Routing, IP addressing      |
+| 2        | Data Link    | MAC address, switching      |
+| 1        | Physical     | Hardware (cables, signals)  |
+
+#### ✅ Short Version:
+
+OSI = 7 Layers: App, Pres, Sess, Trans, Net, Data Link, Physical.
+
+#### ✅ Hindi:
+
+OSI मॉडल के 7 लेयर होते हैं:
+
+1. Physical
+2. Data Link
+3. Network
+4. Transport
+5. Session
+6. Presentation
+7. Application
+
+---
+
+Awesome, Saniya! Let’s wrap up the final **Questions 31 to 34** — each with **Detailed + Short + Hindi Explanation**.
+
+---
+
+## ✅ Questions 31 to 34 — Final Set
+
+---
+
+### **31. Difference Between TCP and UDP**
+
+#### ✅ Detailed Version:
+
+| Feature         | TCP                                | UDP                        |
+| --------------- | ---------------------------------- | -------------------------- |
+| Full Form       | Transmission Control Protocol      | User Datagram Protocol     |
+| Connection      | Connection-oriented                | Connectionless             |
+| Reliability     | Reliable (acknowledgements, retry) | Not reliable               |
+| Speed           | Slower (more overhead)             | Faster (less overhead)     |
+| Use Cases       | Web, Email, File transfer (FTP)    | Video streaming, VoIP, DNS |
+| Packet Delivery | Guaranteed in order                | Not guaranteed, may drop   |
+
+#### ✅ Short Version:
+
+* TCP: Reliable, slower, ordered
+* UDP: Unreliable, faster, unordered
+
+#### ✅ Hindi:
+
+* **TCP**: कनेक्शन-ओरिएंटेड, भरोसेमंद
+* **UDP**: कनेक्शनलेस, तेज़, कभी-कभी पैकेट मिस हो सकता है
+
+---
+
+### **32. Basic Networking Commands**
+
+#### ✅ Detailed Version:
+
+| Command                     | Description                      |
+| --------------------------- | -------------------------------- |
+| `ip a` or `ifconfig`        | Show IP address and network info |
+| `ping google.com`           | Check connectivity               |
+| `traceroute` or `tracepath` | Show route taken by packet       |
+| `netstat -tuln`             | Show listening ports             |
+| `ss -tuln`                  | Modern replacement for netstat   |
+| `nslookup` or `dig`         | DNS lookup                       |
+| `hostname`                  | Show system hostname             |
+| `curl` / `wget`             | Fetch URL content                |
+
+#### ✅ Short Version:
+
+* `ip a`, `ping`, `netstat`, `traceroute`, `nslookup`, `hostname`
+
+#### ✅ Hindi:
+
+नेटवर्क से जुड़े जरूरी कमांड्स:
+
+* `ip a` – IP देखने के लिए
+* `ping` – नेटवर्क कनेक्शन चेक
+* `netstat` – कौन से पोर्ट खुले हैं
+* `traceroute` – पैकेट का रास्ता
+* `nslookup` – DNS जानकारी
+
+---
+
+### **33. Explain IP Classes**
+
+#### ✅ Detailed Version:
+
+There are 5 IP address classes (based on first octet):
+
+| Class | Range                       | Usage           | Default Subnet Mask |
+| ----- | --------------------------- | --------------- | ------------------- |
+| A     | 1.0.0.0 – 126.x.x.x         | Large networks  | 255.0.0.0           |
+| B     | 128.0.0.0 – 191.255.x.x     | Medium networks | 255.255.0.0         |
+| C     | 192.0.0.0 – 223.255.255.x   | Small networks  | 255.255.255.0       |
+| D     | 224.0.0.0 – 239.255.255.255 | Multicasting    | N/A                 |
+| E     | 240.0.0.0 – 255.255.255.255 | Research only   | N/A                 |
+
+#### ✅ Short Version:
+
+* A: Large (1–126)
+* B: Medium (128–191)
+* C: Small (192–223)
+
+#### ✅ Hindi:
+
+IP क्लास के प्रकार:
+
+* **Class A**: बड़ी कंपनियों के लिए
+* **Class B**: मीडियम नेटवर्क
+* **Class C**: छोटे नेटवर्क
+* **Class D/E**: खास कामों के लिए (Multicast/Research)
+
+---
+
+### **34. Difference Between Public and Private IP Addresses**
+
+#### ✅ Detailed Version:
+
+| Type    | Description                  | Example Ranges                         |
+| ------- | ---------------------------- | -------------------------------------- |
+| Public  | Accessible over the internet | 8.8.8.8, 123.45.67.89                  |
+| Private | Internal use only (LAN)      | Class A: 10.0.0.0 – 10.255.255.255     |
+|         |                              | Class B: 172.16.0.0 – 172.31.255.255   |
+|         |                              | Class C: 192.168.0.0 – 192.168.255.255 |
+
+* Public IPs are assigned by ISPs.
+* Private IPs are used in homes/offices, behind routers.
+
+#### ✅ Short Version:
+
+* **Public**: Internet-visible (e.g., 8.8.8.8)
+* **Private**: Local network only (e.g., 192.168.1.1)
+
+#### ✅ Hindi:
+
+* **Public IP**: इंटरनेट पर दिखती है
+* **Private IP**: घर/ऑफिस में इंटरनल यूज़ के लिए
+  उदाहरण:
+* Public: 8.8.8.8
+* Private: 192.168.x.x
+
+---
+
+
