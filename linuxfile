@@ -1,4 +1,5 @@
- **1. What is Operating System?**
+
+**1. What is Operating System?**
 
 **English:** An OS is system software that manages hardware and software resources and provides services to computer programs.
 **Hindi:** Operating system एक ऐसा software है जो computer के hardware और software को manage करता है।
@@ -510,4 +511,165 @@ cd
 ```
 
 **Hindi:** पहला `cd` हमें दी गई path पर ले जाता है, और दूसरा हमें वापस home directory में लाता है।
+
+Here are the **answers with explanations** for your Linux filesystem and directory structure questions:
+
+---
+
+### ✅ **Q.1) Which command is used to get information about the file hierarchy system?**
+
+**Answer:**
+
+```bash
+man hier
+```
+
+**Explanation (Hindi):** यह command Linux में directory structure (hierarchy) की जानकारी देती है।
+
+---
+
+### ✅ **Q.2) A directory which contains the executable binary files that require root privileges to perform tasks?**
+
+**Answer:**
+
+```bash
+/sbin
+```
+
+**Explanation:** `/sbin` में system administration वाले commands होते हैं जिन्हें root user द्वारा चलाया जाता है।
+
+---
+
+### ✅ **Q.3) The "/opt" directory comes in which category of directories?**
+
+**Answer:**
+**1) Binary directories** ✅
+**Explanation:** `/opt` में third-party या optional software के executable binaries और libraries install होते हैं।
+
+---
+
+### ✅ **Q.4) Host-specific configuration files are installed in which directory?**
+
+**Answer:**
+
+```bash
+/etc
+```
+
+**Explanation:** यह directory system-wide configuration files जैसे hostname, network, services आदि के लिए होती है।
+
+---
+
+### ✅ **Q.5) Kernel modules are present in which directory?**
+
+**Answer:**
+
+```bash
+/lib/modules
+```
+
+**Explanation:** Kernel modules (.ko files) इस path में version-wise organized होते हैं।
+
+---
+
+### ✅ **Q.6) GRUB configuration file is located in which directory?**
+
+**Answer:**
+
+```bash
+/boot/grub
+```
+
+**Explanation:** GRUB bootloader का config file (जैसे `grub.cfg`) इस directory में होता है।
+
+---
+
+### ✅ **Q.7) In Linux filesystem, the passwords of different users are stored in which directory?**
+
+**Answer:**
+
+```bash
+/etc
+```
+
+**Explanation:** Password-related files (`/etc/passwd` और `/etc/shadow`) इस directory में होते हैं।
+
+---
+
+### ✅ **Q.8) Which directory contains dynamic data such as databases & websites?**
+
+**Answer:**
+
+```bash
+/var
+```
+
+**Explanation:** `/var` में frequently changing data जैसे logs, mail, databases, और web files रखे जाते हैं।
+
+---
+
+### ✅ **Q.9) A directory which contains regular commands & utilities?**
+
+**Answer:**
+
+```bash
+/bin
+```
+
+**Explanation:** `/bin` में basic commands होते हैं जैसे `ls`, `cp`, `mv`, जो सभी users के लिए जरूरी होते हैं।
+
+---
+
+### ✅ **Q.10) Which directory contains non-persistent process runtime data?**
+
+**Answer:**
+
+```bash
+/run
+```
+
+**Explanation:** `/run` में running processes और system की volatile जानकारी होती है (boot के बाद empty हो जाता है)।
+
+---
+
+### ✅ **Q.11) Installed software programs and libraries are contained in which directory?**
+
+**Answer:**
+
+```bash
+/usr
+```
+
+**Explanation:** `/usr/bin`, `/usr/lib`, और `/usr/share` में user-level programs और libraries होती हैं।
+
+---
+
+### ✅ **Q.12) Which directory is main in hierarchy?**
+
+**Answer:**
+
+```bash
+/
+```
+
+**Explanation:** `/` root directory है और Linux filesystem की base/root होती है।
+
+---
+
+### ✅ **Q.13) In which directory is mail stored?**
+
+**Answer:**
+
+```bash
+/var/mail
+```
+
+OR
+
+```bash
+/var/spool/mail
+```
+
+**Explanation:** User-specific emails को यह directories संभालती हैं।
+
 
