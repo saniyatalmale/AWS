@@ -1,0 +1,350 @@
+# Linux and Networking Fundamentals - Interview Questions & Answers
+
+## 1. What is Operating System?
+### Detailed:
+An operating system is software that manages hardware and software resources.
+
+### Short:
+OS manages hardware and software.
+
+### Hindi:
+ऑपरेटिंग सिस्टम हार्डवेयर और सॉफ्टवेयर को मैनेज करता है।
+
+---
+
+## 2. Difference Between Linux and Windows?
+*Image comparison expected* (Not included in markdown)
+
+---
+
+## 3. What is Open Source?
+### Detailed:
+Open source refers to software whose source code is made available to the public for free. Anyone can view, modify, distribute, and use the software.
+
+### Short:
+Software with freely available source code.
+
+### Hindi:
+ऐसा सॉफ्टवेयर जिसका सोर्स कोड फ्री होता है और कोई भी इस्तेमाल कर सकता है।
+
+---
+
+## 4. Explain Linux Architecture?
+### Detailed:
+Linux has 4 layers - User Space, Kernel Space, System Libraries, and Hardware. Kernel manages resources, User Space has applications, System Libraries help interaction.
+
+### Short:
+Linux has kernel, user space, libraries, and hardware.
+
+### Hindi:
+Linux का आर्किटेक्चर में कर्नेल, यूजर स्पेस, लाइब्रेरी और हार्डवेयर शामिल हैं।
+
+---
+
+## 5. What is Virtualization?
+### Detailed:
+Virtualization creates virtual versions of physical hardware to run multiple OS or applications on a single physical machine.
+
+### Short:
+Running multiple virtual machines on one physical machine.
+
+### Hindi:
+एक ही कंप्यूटर पर कई वर्चुअल मशीन चलाना।
+
+---
+
+## 6. Explain Hypervisor and its Types?
+### Detailed:
+Hypervisor runs virtual machines.  
+- Type 1: Bare-metal (runs directly on hardware)  
+- Type 2: Hosted (runs on OS)
+
+### Short:
+Hypervisor runs VMs; Type 1 is hardware-based, Type 2 runs on OS.
+
+### Hindi:
+हाइपरवाइजर वर्चुअल मशीन चलाता है। Type 1 सीधे हार्डवेयर पर, Type 2 OS पर चलता है।
+
+---
+
+## 7. What is Shell, Its Types and How to Check Current Shell?
+### Detailed:
+Shell is command interpreter. Types: bash, sh, zsh, csh. Check shell: `echo $SHELL` or `echo $0`.
+
+### Short:
+Shell interprets commands; types: bash, sh; check with `echo $SHELL`.
+
+### Hindi:
+शेल कमांड को समझ कर OS को बताता है। `echo $SHELL` से चेक करें।
+
+---
+
+## 8. What is Kernel and Command to Check Kernel Info?
+### Detailed:
+Kernel manages hardware and system calls. Check kernel: `uname -r` or `uname -a`.
+
+### Short:
+Kernel controls system hardware; check with `uname -r`.
+
+### Hindi:
+कर्नेल हार्डवेयर कंट्रोल करता है। `uname -r` से देख सकते हैं।
+
+---
+
+## 9. Command to Check OS Information?
+### Detailed:
+Check OS: `cat /etc/os-release` or `lsb_release -a`.
+
+### Short:
+Use `cat /etc/os-release` to check OS details.
+
+### Hindi:
+`cat /etc/os-release` से OS की जानकारी मिलेगी।
+
+---
+
+## 10. Command to Check Available Memory?
+### Detailed:
+Use `free -h` or `cat /proc/meminfo`.
+
+### Short:
+`free -h` shows memory usage.
+
+### Hindi:
+`free -h` से मेमोरी देखें।
+
+---
+
+## 11. Command to Check Storage or Disk Info?
+### Detailed:
+Use `df -h` or `lsblk`.
+
+### Short:
+`df -h` for disk usage.
+
+### Hindi:
+`df -h` से डिस्क स्पेस चेक करें।
+
+---
+
+## 12. Command to Check Size of File/Dir?
+### Detailed:
+Use `du -sh filename` or `du -sh directory`.
+
+### Short:
+`du -sh` shows size.
+
+### Hindi:
+`du -sh` से फाइल या फोल्डर का साइज़ पता करें।
+
+---
+
+## 13. Explain Modes of vim Editor?
+### Detailed:
+- Normal: default mode for commands  
+- Insert: for text input (press `i` to enter)  
+- Visual: text selection (press `v`)  
+- Command: for commands (press `:`)
+
+### Short:
+vim has Normal, Insert, Visual, Command modes.
+
+### Hindi:
+vim में Normal, Insert, Visual, Command मोड होते हैं।
+
+---
+
+## 14. Difference Between adduser and useradd?
+### Detailed:
+`useradd` is low-level, manual setup. `adduser` is friendly, uses defaults.
+
+### Short:
+`adduser` is easier; `useradd` is manual.
+
+### Hindi:
+`adduser` आसान, `useradd` कमांड लाइन बेसिक कमांड है।
+
+---
+
+## 15. Explain Skeleton Files?
+### Detailed:
+Skeleton files are templates copied to new user’s home on creation (`/etc/skel/` contents).
+
+### Short:
+Default files copied to new user home.
+
+### Hindi:
+नई यूजर होम में कॉपी होने वाली डिफॉल्ट फाइलें।
+
+---
+
+## 16. Explain Fields of passwd File?
+### Detailed:
+Format:  
+`username:password:UID:GID:GECOS:home:shell`
+
+### Short:
+passwd fields: username, password, UID, GID, info, home, shell.
+
+### Hindi:
+passwd फाइल में यूजर डिटेल्स होते हैं जैसे UID, GID, होम, शेल।
+
+---
+
+## 17. How to Check User Belongs to Which Group?
+### Detailed:
+Use `groups username` or `id username`.
+
+### Short:
+`groups username` shows groups.
+
+### Hindi:
+`groups` से यूजर के ग्रुप देखें।
+
+---
+
+## 18. Explain File Types in Linux?
+### Detailed:
+Types: regular file (-), directory (d), symbolic link (l), block device (b), character device (c), socket (s), FIFO (p).
+
+### Short:
+File types: regular, directory, link, device, socket, FIFO.
+
+### Hindi:
+फाइल के प्रकार जैसे रेगुलर, डायरेक्टरी, लिंक, डिवाइस।
+
+---
+
+## 19. Difference Between Hard Link vs Soft Link?
+### Detailed:
+- Hard link points to inode, same file data.  
+- Soft link points to file path, can link across filesystems.
+
+### Short:
+Hard link = inode link; soft link = shortcut path.
+
+### Hindi:
+Hard लिंक सीधे फाइल से जुड़ा, soft लिंक शॉर्टकट है।
+
+---
+
+## 20. How to Change Ownership of File/Dir?
+### Detailed:
+Use `chown user:group filename`.
+
+### Short:
+`chown user file` changes ownership.
+
+### Hindi:
+`chown` से फाइल मालिक बदलें।
+
+---
+
+## 21. How to Set Permissions Using Symbolic and Numeric Modes?
+### Detailed:
+- Symbolic: `chmod u+x file`  
+- Numeric: `chmod 755 file`  
+(r=4, w=2, x=1)
+
+### Short:
+Set permissions with `chmod` symbolic or numeric.
+
+### Hindi:
+`chmod u+x` या `chmod 755` से परमिशन सेट करें।
+
+---
+
+## 22. What is umask?
+### Detailed:
+umask sets default permissions by subtracting from 666 (files) or 777 (dirs).
+
+### Short:
+umask defines default permissions mask.
+
+### Hindi:
+umask डिफॉल्ट परमिशन सेट करता है।
+
+---
+
+## 23. Default Permissions for Root User for File/Dir?
+### Detailed:
+Usually 644 for files, 755 for dirs after umask.
+
+### Short:
+Root default: files 644, dirs 755.
+
+### Hindi:
+Root के लिए फाइल 644, डायरेक्टरी 755 परमिशन।
+
+---
+
+## 24. Default Permissions for Local User for File/Dir?
+### Detailed:
+Similar to root but depends on umask 022 or 002.
+
+### Short:
+Local user files 644, dirs 755 usually.
+
+### Hindi:
+यूजर फाइल 644, डायरेक्टरी 755 होती हैं।
+
+---
+
+## 25. Explain Crontab Fields?
+### Detailed:
+`min hour day month weekday command`  
+Fields represent time schedule.
+
+### Short:
+Crontab: minute, hour, day, month, weekday, command.
+
+### Hindi:
+क्रोनटैब में मिनट, घंटा, दिन, महीना, हफ्ते का दिन और कमांड होता है।
+
+---
+
+## 26. Explain top Command?
+### Detailed:
+Shows live CPU, memory, processes with interactive commands.
+
+### Short:
+`top` shows live system info.
+
+### Hindi:
+`top` से CPU, मेमोरी और प्रोसेस देखें।
+
+---
+
+## 27. Explain ps Command?
+### Detailed:
+Shows running processes.
+
+### Short:
+`ps` shows current processes.
+
+### Hindi:
+`ps` कमांड रनिंग प्रोसेस दिखाता है।
+
+---
+
+## 28. Explain grep Command?
+### Detailed:
+Searches for pattern in text/files.
+
+### Short:
+`grep` finds patterns in files.
+
+### Hindi:
+`grep` से फाइल में शब्द खोजें।
+
+---
+
+## 29. How to Archive, Compress and Extract Files?
+### Detailed:
+Use `tar` and `gzip` commands.
+
+### Short:
+`tar` archive, `gzip` compress.
+
+### Hindi:
+`tar` से आर्काइव, `gzip` से कम्प्रेस करें।
