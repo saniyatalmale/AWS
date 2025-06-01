@@ -301,3 +301,213 @@ nslookup domain.com
 **Public IPs:** Globally unique, assigned by ISP, used for internet access.
 
 
+Here's a clear and concise explanation for each **basic Linux command task**, with answers and short Hindi explanations:
+
+---
+
+### ✅ *1. How to check current run level of a Linux server?*
+
+**Command:**
+
+```bash
+who -r
+```
+
+OR
+
+```bash
+runlevel
+```
+
+**Hindi:** यह कमांड वर्तमान रनलेवल (system mode) दिखाती है, जैसे multi-user mode या graphical mode।
+
+---
+
+### ✅ *2. How to check Linux memory utilization?*
+
+**Command:**
+
+```bash
+free -h
+```
+
+OR
+
+```bash
+top
+```
+
+**Hindi:** यह कमांड RAM और swap की कितनी मेमोरी इस्तेमाल हो रही है, वह दिखाती है।
+
+---
+
+### ✅ *3. What is the `ls` command in Linux?*
+
+**Answer:**
+`ls` is used to list directory contents.
+**Example:**
+
+```bash
+ls
+```
+
+**Hindi:** यह कमांड किसी directory के अंदर मौजूद files और folders दिखाती है।
+
+---
+
+### ✅ *4. Which command is used to set terminal IO characteristics?*
+
+**Command:**
+
+```bash
+stty
+```
+
+**Hindi:** यह कमांड terminal की input/output settings को configure करने के लिए इस्तेमाल होती है।
+
+---
+
+### ✅ *5. Which command is used to record a user login session in a file?*
+
+**Command:**
+
+```bash
+script filename.txt
+```
+
+**Hindi:** यह कमांड आपके session की पूरी जानकारी एक फाइल में रिकॉर्ड करती है।
+
+---
+
+### ✅ *6. Which command is used to display the operating system name?*
+
+**Command:**
+
+```bash
+uname
+```
+
+**Hindi:** यह कमांड आपके सिस्टम का OS नाम दिखाती है (जैसे Linux)।
+
+---
+
+### ✅ *7. Command used to display the UNIX version:*
+
+**Command:**
+
+```bash
+uname -r
+```
+
+**Hindi:** यह UNIX/Linux का kernel version दिखाता है।
+
+---
+
+### ✅ *8. Which command output also contains userid?*
+
+**Command:**
+
+```bash
+id
+```
+
+**Hindi:** यह कमांड user ID, group ID और अन्य जानकारी दिखाती है।
+
+---
+
+### ✅ *9. Which command is used to display hidden files in Linux?*
+
+**Command:**
+
+```bash
+ls -a
+```
+
+**Hindi:** यह कमांड छुपी हुई files (जो dot `.` से शुरू होती हैं) को भी दिखाती है।
+
+---
+
+### ✅ *10. How to print a specific month calendar?*
+
+**Command:**
+
+```bash
+cal 03 2025
+```
+
+*(Example for March 2025)*
+**Hindi:** यह कमांड किसी भी महीने और साल का calendar दिखाती है।
+
+---
+
+### ✅ *11. Which command can print the Julian calendar on the Linux terminal?*
+
+**Command:**
+
+```bash
+cal -j
+```
+
+**Hindi:** Julian calendar में साल का दिन संख्या के हिसाब से दिखता है।
+
+---
+
+### ✅ *12. What is the use of the `bc` command?*
+
+**Answer:**
+`bc` is a command-line calculator for performing mathematical operations.
+**Example:**
+
+```bash
+echo "5+7" | bc
+```
+
+**Hindi:** यह एक command-line calculator है जो calculations के लिए use होता है।
+
+---
+
+### ✅ *13. If we want to fetch details for a particular user?*
+
+**Command:**
+
+```bash
+id username
+```
+
+OR
+
+````bash
+finger username
+``` *(if installed)*  
+**Hindi:** यह कमांड किसी खास user की details (UID, GID, groups) देती है।
+
+---
+
+### ✅ *14. What command is used to remove files?*  
+**Command:**  
+```bash
+rm filename
+````
+
+**Hindi:** यह कमांड किसी file को delete करने के लिए उपयोग होती है।
+
+---
+
+### ✅ *15. If we’re in the home directory but want to change to `/usr/lib/firefox/browser`, and then return to the home directory, we can use which commands?*
+
+**Commands:**
+
+```bash
+cd /usr/lib/firefox/browser
+cd ~
+```
+
+OR
+
+```bash
+cd /usr/lib/firefox/browser
+cd
+```
+
+**Hindi:** पहला `cd` हमें दी गई path पर ले जाता है, और दूसरा हमें वापस home directory में लाता है।
+
