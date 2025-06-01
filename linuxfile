@@ -1,0 +1,303 @@
+ **1. What is Operating System?**
+
+**English:** An OS is system software that manages hardware and software resources and provides services to computer programs.
+**Hindi:** Operating system एक ऐसा software है जो computer के hardware और software को manage करता है।
+
+---
+
+### **2. Difference between Linux and Windows (Image Below)**
+
+| **Linux**          | **Windows**      |
+| ------------------ | ---------------- |
+| Open-source        | Closed-source    |
+| Free               | Paid             |
+| More secure        | Less secure      |
+| Command-line based | GUI based        |
+| Used in servers    | Used in desktops |
+
+*(Let me know if you want a comparison chart image.)*
+
+---
+
+### **3. What is Open Source?**
+
+**English:** Open source means the source code is publicly available for use, modification, and distribution.
+**Hindi:** Open source का मतलब है कि software का code सभी के लिए खुला होता है, जिसे कोई भी देख, बदल, और इस्तेमाल कर सकता है।
+
+---
+
+### **4. Explain Linux Architecture**
+
+**Components:**
+
+* **Hardware** – Actual physical devices
+* **Kernel** – Core of OS, manages hardware
+* **Shell** – Interface between user and kernel
+* **Utilities** – Basic tools like cp, mv, ls
+* **Applications** – User-installed programs
+
+---
+
+### **5. What is Virtualization?**
+
+**English:** Creating virtual versions of OS, servers, storage, etc.
+**Hindi:** Virtualization का मतलब है physical resources को virtual बना देना, जैसे एक ही मशीन में कई OS चलाना।
+
+---
+
+### **6. Explain Hypervisor and Its Types**
+
+**Hypervisor:** Software to create and run virtual machines (VMs).
+**Types:**
+
+* **Type 1:** Bare-metal (e.g., VMware ESXi)
+* **Type 2:** Hosted (e.g., VirtualBox)
+
+---
+
+### **7. What is Shell, its Types and How to Check Current Shell?**
+
+**Shell:** Interface to interact with OS using commands.
+**Types:** bash, sh, csh, ksh, zsh
+**Command to check shell:** `echo $SHELL`
+
+---
+
+### **8. What is Kernel and Command to Check Kernel Info?**
+
+**Kernel:** Core part of OS that connects hardware and software.
+**Command:** `uname -r`
+
+---
+
+### **9. Command to Check OS Information**
+
+```bash
+cat /etc/os-release
+```
+
+---
+
+### **10. Command to Check Available Memory**
+
+```bash
+free -h
+```
+
+---
+
+### **11. Command to Check Disk Info**
+
+```bash
+df -h
+```
+
+---
+
+### **12. Command to Check Size of File/Directory**
+
+```bash
+du -sh filename_or_directory
+```
+
+---
+
+### **13. Explain Modes of Vim Editor**
+
+* **Normal Mode:** For navigation
+* **Insert Mode:** For typing text (`i`, `a`)
+* **Command Mode:** For saving/exiting (`:wq`, `:q!`)
+
+---
+
+### **14. Difference Between `adduser` and `useradd`**
+
+* `adduser`: High-level, user-friendly
+* `useradd`: Low-level, faster, needs more options
+
+---
+
+### **15. Explain Skeleton Files**
+
+**English:** Default files copied to new user's home directory from `/etc/skel/`.
+**Hindi:** Skeleton files वो default files होती हैं जो नए user के home directory में automatically copy होती हैं।
+
+---
+
+### **16. Fields of /etc/passwd File**
+
+Format: `username:x:UID:GID:comment:home:shell`
+
+* UID: User ID
+* GID: Group ID
+* Home: Home directory
+* Shell: Default shell
+
+---
+
+### **17. How to Check Group of a User?**
+
+```bash
+groups username
+```
+
+---
+
+### **18. File Types in Linux**
+
+* Regular file (-)
+* Directory (d)
+* Symbolic link (l)
+* Block device (b)
+* Character device (c)
+* Socket (s)
+* Named pipe (p)
+
+---
+
+### **19. Difference: Hard Link vs Soft Link**
+
+**Hard Link:** Direct reference, same inode, survives deletion
+**Soft Link:** Shortcut, different inode, breaks if original is deleted
+
+---
+
+### **20. Change Ownership of File/Directory**
+
+```bash
+chown user:group filename
+```
+
+---
+
+### **21. Set Permissions (Symbolic & Numeric)**
+
+* Symbolic: `chmod u+x file`
+* Numeric: `chmod 755 file`
+
+---
+
+### **22. What is Umask?**
+
+**English:** Default permission mask for new files/directories
+**Hindi:** Umask एक default permission setting है जो नए files और directories के लिए set होती है।
+
+---
+
+### **23. Default Permissions for Root (File/Dir)**
+
+* File: `-rw-r--r--` (644)
+* Directory: `drwxr-xr-x` (755)
+
+---
+
+### **24. Default Permissions for Local User (File/Dir)**
+
+Same as root unless `umask` is different.
+
+---
+
+### **25. Crontab Fields (Format)**
+
+```
+* * * * * command
+│ │ │ │ │
+│ │ │ │ └── Day of week (0-6)
+│ │ │ └──── Month (1-12)
+│ │ └────── Day of month (1-31)
+│ └──────── Hour (0-23)
+└────────── Minute (0-59)
+```
+
+---
+
+### **26. Explain `top` Command**
+
+**Use:** Displays real-time system processes, CPU & memory usage.
+
+---
+
+### **27. Explain `ps` Command**
+
+**Use:** Shows current running processes
+**Example:** `ps aux`
+
+---
+
+### **28. Explain `grep` Command**
+
+**Use:** Search text/patterns in files
+**Example:** `grep "error" logfile.txt`
+
+---
+
+### **29. Archive & Compress Commands**
+
+* **Tar Archive:** `tar -cvf file.tar folder/`
+* **Zip:** `zip file.zip folder/`
+* **Extract:**
+
+  * `tar -xvf file.tar`
+  * `unzip file.zip`
+
+---
+
+### **30. Explain OSI Model (7 Layers)**
+
+1. Physical
+2. Data Link
+3. Network
+4. Transport
+5. Session
+6. Presentation
+7. Application
+   **Hindi Tip:** ऊपर से नीचे “A-P-S-T-N-D-P” याद रखो।
+
+---
+
+### **31. Difference: TCP vs UDP**
+
+| TCP                 | UDP                |
+| ------------------- | ------------------ |
+| Connection-oriented | Connectionless     |
+| Reliable            | Not reliable       |
+| Slower              | Faster             |
+| Example: HTTP, FTP  | Example: DNS, VoIP |
+
+---
+
+### **32. Basic Networking Commands**
+
+```bash
+ip a         # IP address  
+ping google.com  
+traceroute google.com  
+netstat -tulnp  
+nslookup domain.com  
+```
+
+---
+
+### **33. Explain IP Classes**
+
+| Class | Range   | Default Mask  | Use            |
+| ----- | ------- | ------------- | -------------- |
+| A     | 1-126   | 255.0.0.0     | Large networks |
+| B     | 128-191 | 255.255.0.0   | Medium         |
+| C     | 192-223 | 255.255.255.0 | Small          |
+| D     | 224-239 | -             | Multicast      |
+| E     | 240-255 | -             | Experimental   |
+
+---
+
+### **34. Public vs Private IP Addresses**
+
+**Private IPs:** Used within LAN (Not routable on Internet)
+
+* Class A: 10.0.0.0 – 10.255.255.255
+* Class B: 172.16.0.0 – 172.31.255.255
+* Class C: 192.168.0.0 – 192.168.255.255
+
+**Public IPs:** Globally unique, assigned by ISP, used for internet access.
+
+
