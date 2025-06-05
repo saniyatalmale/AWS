@@ -1,0 +1,275 @@
+### 1. **What is Cloud Computing?**
+
+Cloud computing means **storing and accessing data and programs over the internet** instead of your computer's hard drive.
+Example: Using Google Drive or Netflix.
+
+---
+
+### 2. **Cloud Service Models**
+
+| Model    | Full Form                   | Meaning                                                       | Example               |
+| -------- | --------------------------- | ------------------------------------------------------------- | --------------------- |
+| **IaaS** | Infrastructure as a Service | You get virtual machines, storage, network.                   | EC2, EBS              |
+| **PaaS** | Platform as a Service       | You get a platform to run your apps without managing servers. | AWS Elastic Beanstalk |
+| **SaaS** | Software as a Service       | You use ready-made apps. No setup needed.                     | Gmail, Zoom           |
+
+---
+
+### 3. **Deployment Models in Cloud**
+
+| Model             | Description                    | Example                   |
+| ----------------- | ------------------------------ | ------------------------- |
+| **Public Cloud**  | Cloud is shared by many users. | AWS, Azure                |
+| **Private Cloud** | Used by one company only.      | Company-owned data center |
+| **Hybrid Cloud**  | Mix of public and private.     | Cloud + On-premises setup |
+
+---
+
+### 4. **What is IAM Service?**
+
+IAM (Identity and Access Management) is used to **control who can access AWS and what they can do**.
+
+---
+
+### 5. **What is a Policy in IAM?**
+
+A **policy** is a set of **permissions written in JSON** that defines what actions are allowed or denied.
+Example: A policy can allow an IAM user to only view S3 buckets but not delete them.
+
+---
+
+### 6. **What is a Role in IAM?**
+
+A **role** is like a temporary identity that AWS services can use to **access other AWS services securely**.
+Example: EC2 can use a role to access an S3 bucket.
+
+---
+
+### 7. **Difference Between Roles and Policies**
+
+| Roles                | Policies                    |
+| -------------------- | --------------------------- |
+| Temporary identity   | Set of rules (permissions)  |
+| Used by AWS services | Attached to user/role/group |
+| No username/password | Written in JSON             |
+
+---
+
+### 8. **What is EC2?**
+
+EC2 (Elastic Compute Cloud) is a **virtual machine** in the cloud where you can run your applications (just like your computer but in AWS).
+
+---
+
+### 9. **EC2 Instance Types and Purchasing Options**
+
+✅ **Types**:
+
+* **General purpose** (t2, t3) – balanced CPU, RAM
+* **Compute optimized** (c5) – better for high processing
+* **Memory optimized** (r5) – more RAM
+
+✅ **Purchasing Options**:
+
+* **On-Demand** – Pay per hour/second
+* **Reserved** – Pay in advance for 1-3 years
+* **Spot** – Cheapest, but can be stopped anytime
+* **Savings Plan** – Commit usage for lower cost
+
+---
+
+### 10. **Difference Between AMI and Snapshot**
+
+| AMI                        | Snapshot             |
+| -------------------------- | -------------------- |
+| Amazon Machine Image       | Backup of a volume   |
+| Used to launch EC2         | Used to restore data |
+| Contains OS + app + config | Only volume data     |
+
+---
+
+### 11. **EBS Volume Types**
+
+| Type      | Best For               |
+| --------- | ---------------------- |
+| gp3 (SSD) | General use, default   |
+| io2 (SSD) | High performance apps  |
+| st1 (HDD) | Big data, throughput   |
+| sc1 (HDD) | Cold storage, low cost |
+
+---
+
+### 12. **What is Load Balancing?**
+
+Load balancing **distributes traffic to multiple servers** to avoid overload and keep app running smoothly.
+
+---
+
+### 13. **Difference Between ALB and NLB**
+
+| ALB                   | NLB                |
+| --------------------- | ------------------ |
+| Application Layer     | Network Layer      |
+| Works with HTTP/HTTPS | Works with TCP/UDP |
+| Supports routing      | Faster performance |
+
+---
+
+### 14. **What is Auto Scaling?**
+
+Auto Scaling automatically **adds or removes EC2 instances** based on traffic or load.
+Example: If your website gets more visitors, it adds servers automatically.
+
+---
+
+### 15. **What is S3 and Its Advantages?**
+
+S3 (Simple Storage Service) is used to **store and retrieve files/data**.
+✅ Advantages:
+
+* Easy to use
+* Scalable
+* Secure
+* Durable
+* Pay only for what you use
+
+---
+
+### 16. **Difference Between S3, EFS, and EBS**
+
+| Feature | S3             | EBS           | EFS                |
+| ------- | -------------- | ------------- | ------------------ |
+| Type    | Object Storage | Block Storage | File Storage       |
+| Access  | Web            | EC2           | EC2 (Linux only)   |
+| Shared? | Yes            | No            | Yes                |
+| Use     | Images, videos | Databases     | Shared file system |
+
+---
+
+### 17. **S3 Storage Classes**
+
+| Class                | Use Case              |
+| -------------------- | --------------------- |
+| Standard             | Frequently used data  |
+| Infrequent Access    | Not used often        |
+| Glacier              | Archival (very cheap) |
+| Glacier Deep Archive | Long-term backup      |
+
+---
+
+### 18. **What is Lifecycle Policy in S3?**
+
+Lifecycle policy helps to **automatically move or delete files** after a certain time.
+Example: Move files to Glacier after 30 days.
+
+---
+
+### 19. **What is VPC?**
+
+VPC (Virtual Private Cloud) is your own **private network inside AWS**.
+You control IPs, subnets, gateways, and security.
+
+---
+
+### 20. **Difference Between Public and Private Subnet**
+
+| Public Subnet        | Private Subnet     |
+| -------------------- | ------------------ |
+| Has internet access  | No internet        |
+| Used for web servers | Used for databases |
+
+---
+
+### 21. **What is NAT?**
+
+NAT (Network Address Translation) allows **private subnet instances to access the internet** but blocks incoming traffic.
+
+---
+
+### 22. **What is Peering Connection?**
+
+Peering is used to **connect two VPCs** so they can communicate with each other.
+
+---
+
+### 23. **Difference Between NACL and SG**
+
+| NACL                  | SG (Security Group)     |
+| --------------------- | ----------------------- |
+| Works at subnet level | Works at instance level |
+| Stateless             | Stateful                |
+| Allow/Deny rules      | Only allow rules        |
+
+---
+
+### 24. **What is Domain Name?**
+
+Domain name is the **human-readable address** of a website (like google.com).
+
+---
+
+### 25. **What is Hosted Zone?**
+
+Hosted Zone is a **container for records in Route 53** related to a domain name.
+
+---
+
+### 26. **What are Records in Route 53?**
+
+* **A Record** – Maps domain to IP
+* **CNAME** – Maps domain to another domain
+* **MX** – Mail exchange record
+* **TTL** – Time to live
+
+---
+
+### 27. **What are Routing Policies in Route 53?**
+
+| Policy        | Use                |
+| ------------- | ------------------ |
+| Simple        | Single record      |
+| Weighted      | Split traffic by % |
+| Latency-based | Nearest location   |
+| Failover      | Backup server      |
+| Geolocation   | Based on region    |
+
+---
+
+### 28. **What is SSL?**
+
+SSL (Secure Socket Layer) **encrypts data between browser and server**, ensuring secure data transfer.
+Example: HTTPS is secure due to SSL.
+
+---
+
+### 29. **What is CDN?**
+
+CDN (Content Delivery Network) delivers **content faster** to users by using **nearby servers**.
+Example: CloudFront is AWS CDN.
+
+---
+
+### 30. **What is Edge Location?**
+
+Edge locations are **servers placed globally** to cache content and deliver it quickly to users.
+
+---
+
+### 31. **What is OAC / OAI in CloudFront?**
+
+| OAI                               | OAC                            |
+| --------------------------------- | ------------------------------ |
+| Old method                        | New method                     |
+| Lets CloudFront access private S3 | More secure and modern         |
+| One per distribution              | Can support multiple behaviors |
+
+---
+
+### 32. **What is Latency?**
+
+Latency is the **delay or time taken** to transfer data from source to destination.
+Lower latency = faster performance.
+
+---
+
+Let me know if you want a **PDF or markdown file** with this information or if you want **Hindi translations** too.
