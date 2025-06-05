@@ -1,0 +1,264 @@
+Here are **important AWS interview questions and answers** on the topics you mentioned: **Basic AWS, IAM, EC2, S3, VPC, Route 53, Load Balancer, and Auto Scaling**. These are suitable for **freshers and entry-level AWS roles**.
+
+---
+
+## ✅ 1. **Basic AWS Questions**
+
+### Q1. What is AWS?
+
+**Ans:**
+AWS (Amazon Web Services) is a cloud platform provided by Amazon that offers services like computing power, storage, networking, databases, machine learning, and more on a pay-as-you-go basis.
+
+---
+
+### Q2. What are the benefits of using AWS?
+
+**Ans:**
+
+* Scalability
+* Cost-effective (pay-as-you-go)
+* High availability
+* Security
+* Flexibility
+* Global infrastructure
+
+---
+
+### Q3. What is the difference between Region and Availability Zone?
+
+**Ans:**
+
+* **Region**: A geographical location (e.g., Mumbai, US-East)
+* **Availability Zone (AZ)**: A data center (or group of them) inside a region
+* Each Region has multiple AZs for high availability.
+
+---
+
+## ✅ 2. **IAM (Identity and Access Management)**
+
+### Q1. What is IAM in AWS?
+
+**Ans:**
+IAM allows you to manage users, groups, roles, and their permissions to securely control access to AWS resources.
+
+---
+
+### Q2. What are IAM Policies?
+
+**Ans:**
+Policies are JSON documents that define **permissions**. They can be **attached to users, groups, or roles** to allow or deny actions.
+
+---
+
+### Q3. What is the difference between IAM Role and IAM User?
+
+| IAM User                      | IAM Role                                     |
+| ----------------------------- | -------------------------------------------- |
+| Created for humans            | Created for AWS services or temporary access |
+| Has long-term credentials     | Has temporary credentials                    |
+| Login using username/password | No login; assumed by services                |
+
+---
+
+### Q4. What is the "principle of least privilege" in IAM?
+
+**Ans:**
+Only give the **minimum required permissions** to perform a task—nothing more.
+
+---
+
+## ✅ 3. **EC2 (Elastic Compute Cloud)**
+
+### Q1. What is EC2?
+
+**Ans:**
+EC2 is a web service that provides resizable compute capacity in the cloud. It allows you to launch virtual servers (instances).
+
+---
+
+### Q2. What are EC2 instance types?
+
+**Ans:**
+
+* **General Purpose** – t2, t3 (balanced)
+* **Compute Optimized** – c5 (for CPU-heavy tasks)
+* **Memory Optimized** – r5 (for RAM-intensive applications)
+* **Storage Optimized** – i3 (for high IOPS storage)
+
+---
+
+### Q3. What are the EC2 purchasing options?
+
+**Ans:**
+
+* **On-Demand** – pay per hour/second
+* **Reserved** – 1/3-year contract
+* **Spot** – bid for unused capacity
+* **Savings Plans** – flexible discount options
+
+---
+
+### Q4. What is an AMI?
+
+**Ans:**
+AMI (Amazon Machine Image) is a template that contains the software configuration (OS, application, etc.) used to launch an EC2 instance.
+
+---
+
+## ✅ 4. **S3 (Simple Storage Service)**
+
+### Q1. What is S3?
+
+**Ans:**
+S3 is an object storage service that allows you to store and retrieve any amount of data at any time from anywhere.
+
+---
+
+### Q2. What are storage classes in S3?
+
+**Ans:**
+
+* Standard
+* Intelligent-Tiering
+* One Zone-IA
+* Glacier
+* Glacier Deep Archive
+
+---
+
+### Q3. Is S3 suitable for hosting static websites?
+
+**Ans:**
+Yes, S3 can host static websites by enabling **"Static Website Hosting"** in the bucket settings.
+
+---
+
+### Q4. What is the difference between S3 and EBS?
+
+| Feature  | S3 (Object Storage) | EBS (Block Storage) |
+| -------- | ------------------- | ------------------- |
+| Use Case | Backup, media, logs | OS, DB, app data    |
+| Access   | HTTP(S) API         | Attached to EC2     |
+| Type     | Object              | Block               |
+
+---
+
+## ✅ 5. **VPC (Virtual Private Cloud)**
+
+### Q1. What is VPC?
+
+**Ans:**
+VPC is a **logically isolated network** in AWS where you can launch AWS resources like EC2. You control IP range, subnets, route tables, and gateways.
+
+---
+
+### Q2. What are public and private subnets?
+
+**Ans:**
+
+* **Public Subnet**: Has a route to the internet via **Internet Gateway**
+* **Private Subnet**: No direct route to the internet
+
+---
+
+### Q3. What is a NAT Gateway?
+
+**Ans:**
+NAT Gateway allows **instances in a private subnet** to access the internet **without being exposed** to inbound traffic.
+
+---
+
+### Q4. What is the difference between a Security Group and a NACL?
+
+| Security Group   | NACL               |
+| ---------------- | ------------------ |
+| Instance level   | Subnet level       |
+| Stateful         | Stateless          |
+| Only allow rules | Allow + Deny rules |
+
+---
+
+## ✅ 6. **Route 53**
+
+### Q1. What is Route 53?
+
+**Ans:**
+Amazon Route 53 is a **DNS (Domain Name System)** service that helps direct users to internet applications by translating domain names to IP addresses.
+
+---
+
+### Q2. What types of routing policies are in Route 53?
+
+**Ans:**
+
+* Simple
+* Weighted
+* Latency-based
+* Failover
+* Geolocation
+* Geoproximity
+
+---
+
+### Q3. What is a hosted zone?
+
+**Ans:**
+It is a container for records (like A, CNAME) that defines how traffic is routed for a domain.
+
+---
+
+## ✅ 7. **Load Balancer**
+
+### Q1. What is a Load Balancer in AWS?
+
+**Ans:**
+It distributes incoming traffic across multiple targets (EC2s) to ensure **high availability and fault tolerance**.
+
+---
+
+### Q2. What are types of Load Balancers?
+
+**Ans:**
+
+* **ALB (Application Load Balancer)** – works at Layer 7 (HTTP/HTTPS)
+* **NLB (Network Load Balancer)** – works at Layer 4 (TCP/UDP)
+* **CLB (Classic)** – older, Layer 4 & 7
+
+---
+
+### Q3. What is cross-zone load balancing?
+
+**Ans:**
+It allows the load balancer to distribute traffic **evenly across all registered targets in all Availability Zones**.
+
+---
+
+## ✅ 8. **Auto Scaling**
+
+### Q1. What is Auto Scaling in AWS?
+
+**Ans:**
+Auto Scaling automatically **increases or decreases EC2 instances** based on demand, helping maintain performance and reduce cost.
+
+---
+
+### Q2. What is a Launch Template in Auto Scaling?
+
+**Ans:**
+It defines the configuration (AMI, instance type, key pair, etc.) used to launch EC2 instances in an Auto Scaling Group.
+
+---
+
+### Q3. What are scaling policies?
+
+**Ans:**
+They define **how** and **when** to scale in or out.
+Types:
+
+* **Target tracking**
+* **Step scaling**
+* **Scheduled scaling**
+
+---
+
+If you want this in **PDF format** or in **Hindi + English side by side**, let me know. I can also provide **scenario-based questions** on these topics for practice.
