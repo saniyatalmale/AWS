@@ -1,0 +1,318 @@
+Sure Saniya! Here’s a **detailed but very easy-to-understand explanation** for all the important AWS Cloud topics you asked. I've explained each point in simple language, step-by-step.
+
+---
+
+### 1. **What is Cloud Computing?**
+
+Cloud computing means **storing and accessing data or applications over the internet** instead of your computer's hard drive.
+
+* Example: Google Drive, AWS, Gmail—all are cloud services.
+* You can **rent servers, storage, databases, etc.,** from companies like AWS.
+
+---
+
+### 2. **Cloud Service Models**
+
+There are **3 types**:
+
+| Model | Full Form                   | What It Means                      | Example               |
+| ----- | --------------------------- | ---------------------------------- | --------------------- |
+| IaaS  | Infrastructure as a Service | You rent servers, storage, network | AWS EC2               |
+| PaaS  | Platform as a Service       | You get a platform to run code     | AWS Elastic Beanstalk |
+| SaaS  | Software as a Service       | You use ready-made software        | Gmail, Zoom           |
+
+---
+
+### 3. **Cloud Deployment Models**
+
+| Model         | Meaning                        | Where It Is Used                      |
+| ------------- | ------------------------------ | ------------------------------------- |
+| Public Cloud  | Resources shared by many users | AWS, Azure                            |
+| Private Cloud | Only for one organization      | Used by banks or govt.                |
+| Hybrid Cloud  | Mix of both                    | Some data in AWS, some on your server |
+
+---
+
+### 4. **What is IAM (Identity and Access Management)?**
+
+IAM helps you **securely manage access to AWS services**.
+
+* Create users (like employees)
+* Give limited permissions
+* Set rules for login
+
+---
+
+### 5. **What are Policies in IAM?**
+
+Policies are **rules that decide what a user can do**.
+
+* Written in JSON (code-like)
+* Example: A policy to allow only read access to S3
+
+---
+
+### 6. **What are Roles in IAM?**
+
+Roles are like **temporary permissions**.
+
+* Used for apps or EC2 to access AWS
+* No password needed
+
+---
+
+### 7. **Difference Between Roles and Policies**
+
+| Roles                      | Policies                   |
+| -------------------------- | -------------------------- |
+| Act like users             | Set of rules               |
+| Given to services or users | Attached to roles or users |
+| Temporary access           | Permanent rules            |
+
+---
+
+### 8. **What is EC2?**
+
+EC2 (Elastic Compute Cloud) = **Virtual server** in AWS.
+
+* You can launch Linux/Windows servers.
+* You can host websites, apps, databases.
+
+---
+
+### 9. **Instance Types and Purchasing Options**
+
+**Types (based on use):**
+
+* **t2.micro** – free tier, low cost
+* **m5.large** – general use
+* **c5.large** – high CPU
+
+**Purchasing Options:**
+
+* **On-Demand** – pay per hour
+* **Reserved** – book for 1-3 years, cheaper
+* **Spot** – very cheap, but can stop anytime
+
+---
+
+### 10. **AMI vs Snapshot**
+
+| AMI (Amazon Machine Image)         | Snapshot             |
+| ---------------------------------- | -------------------- |
+| Full image of EC2 (OS, data, apps) | Backup of EBS volume |
+| Used to launch EC2                 | Used to create AMI   |
+| Contains full configuration        | Just storage         |
+
+---
+
+### 11. **EBS Volume Types**
+
+| Type    | Use Case                  |
+| ------- | ------------------------- |
+| gp2/gp3 | General use (boot volume) |
+| io1/io2 | High IOPS, databases      |
+| st1     | Big data, logs            |
+| sc1     | Cold storage, rarely used |
+
+---
+
+### 12. **What is Load Balancing?**
+
+Distributes incoming traffic to multiple servers.
+
+* Example: You have 3 EC2s; Load balancer sends equal traffic to all.
+
+---
+
+### 13. **ALB vs NLB**
+
+| Feature       | ALB (Application)    | NLB (Network)     |
+| ------------- | -------------------- | ----------------- |
+| Works at      | Layer 7 (HTTP/HTTPS) | Layer 4 (TCP/UDP) |
+| Use case      | Web apps             | Gaming, VoIP      |
+| Smart Routing | Yes                  | No                |
+
+---
+
+### 14. **What is Auto Scaling?**
+
+Automatically **adds or removes EC2 instances** based on traffic.
+
+* More users = more EC2s added
+* Less users = EC2s removed
+
+---
+
+### 15. **What is S3 and Its Advantages?**
+
+S3 = Simple Storage Service. Used to **store unlimited files**.
+
+* Stores images, PDFs, videos, backups
+* Advantages:
+
+  * Scalable
+  * Durable (99.999999999%)
+  * Cheap
+  * Secure
+
+---
+
+### 16. **Difference Between S3, EBS, EFS**
+
+| Feature | S3             | EBS           | EFS           |
+| ------- | -------------- | ------------- | ------------- |
+| Type    | Object storage | Block storage | File storage  |
+| Use     | Backup, images | EC2 boot      | Shared folder |
+| Access  | Web            | Only EC2      | Many EC2s     |
+
+---
+
+### 17. **S3 Storage Classes**
+
+| Class                  | Use                    |
+| ---------------------- | ---------------------- |
+| Standard               | Regular use            |
+| IA (Infrequent Access) | Less access            |
+| One Zone IA            | Cheaper, 1 zone        |
+| Glacier                | Archival (slow, cheap) |
+| Deep Glacier           | Very cheap, long-term  |
+
+---
+
+### 18. **Lifecycle Policy in S3**
+
+Automatically **move data from one storage class to another**.
+
+* Example: After 30 days → move to Glacier
+
+---
+
+### 19. **What is VPC (Virtual Private Cloud)?**
+
+VPC = **Your own private network** inside AWS.
+
+* You can create subnets, route tables, gateways.
+* Like your own data center in AWS.
+
+---
+
+### 20. **Difference Between Public and Private Subnet**
+
+| Public Subnet           | Private Subnet     |
+| ----------------------- | ------------------ |
+| Has internet access     | No internet        |
+| EC2 can connect outside | Used for databases |
+| Needs IGW               | Needs NAT          |
+
+---
+
+### 21. **What is NAT?**
+
+NAT = Network Address Translation
+
+* Allows private subnet instances to **access internet**
+* Example: Updates for DB server in private subnet
+
+---
+
+### 22. **What is Peering Connection?**
+
+VPC peering = **connect two VPCs** so they can talk to each other.
+
+* Like connecting 2 different networks
+
+---
+
+### 23. **Difference Between NACL and SG**
+
+| Feature   | NACL         | SG             |
+| --------- | ------------ | -------------- |
+| Works at  | Subnet level | Instance level |
+| Rules     | Allow + Deny | Only Allow     |
+| Stateless | Stateful     |                |
+
+---
+
+### 24. **What is a Domain Name?**
+
+* Human-readable name for a website (like google.com)
+* Helps users open websites easily
+
+---
+
+### 25. **What is Hosted Zone?**
+
+It’s a **container for DNS records** in Route 53.
+
+* Example: Hosted zone for `example.com` will manage its records
+
+---
+
+### 26. **Records in Route 53**
+
+| Record   | Use                        |
+| -------- | -------------------------- |
+| A Record | Maps domain to IP          |
+| CNAME    | Maps one domain to another |
+| MX       | For email servers          |
+| TXT      | For verification           |
+
+---
+
+### 27. **Routing Policies in Route 53**
+
+| Policy   | Use                         |
+| -------- | --------------------------- |
+| Simple   | One IP                      |
+| Weighted | Distribute traffic (80-20%) |
+| Latency  | Closest server              |
+| Failover | Backup server               |
+| Geo      | Based on user location      |
+
+---
+
+### 28. **What is SSL?**
+
+SSL = Secure Sockets Layer
+
+* **Encrypts data** between user and website
+* Shows 🔒 in browser
+* Example: `https://`
+
+---
+
+### 29. **What is CDN (Content Delivery Network)?**
+
+CDN = Delivers content (images, videos) **faster from nearby server**
+
+* In AWS, it’s called **CloudFront**
+
+---
+
+### 30. **What is Edge Location?**
+
+Edge Location = **nearest server** for CDN
+
+* Helps users get content fast
+
+---
+
+### 31. **What is OAC/OAI in CloudFront?**
+
+| Term                         | Meaning                                         |
+| ---------------------------- | ----------------------------------------------- |
+| OAI (Origin Access Identity) | Old method to connect CloudFront to S3 securely |
+| OAC (Origin Access Control)  | New, modern version of OAI                      |
+
+---
+
+### 32. **What is Latency?**
+
+Latency = **Time delay** in sending/receiving data
+
+* Less latency = faster websites
+
+---
+
+Would you like this as a **PDF or markdown file** too, Saniya? Or want a Hindi explanation for any part?
