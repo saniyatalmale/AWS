@@ -1,0 +1,327 @@
+### 1. **What is Cloud Computing?**
+
+**English:**
+Cloud computing is using remote servers on the internet to store, manage, and process data instead of using your own computer.
+
+**Hindi:**
+Cloud computing का मतलब है इंटरनेट पर मौजूद सर्वर का इस्तेमाल करके डेटा को स्टोर करना, मैनेज करना और प्रोसेस करना। इसमें हमें अपनी खुद की हार्डवेयर जरूरत नहीं होती।
+
+---
+
+### 2. **Cloud Service Models (IaaS, PaaS, SaaS):**
+
+| Model | Full Form                   | Use                                   | Example               | Hindi Explanation                               |
+| ----- | --------------------------- | ------------------------------------- | --------------------- | ----------------------------------------------- |
+| IaaS  | Infrastructure as a Service | Rent virtual machines                 | AWS EC2               | आपको सिर्फ हार्डवेयर मिलता है जैसे वर्चुअल मशीन |
+| PaaS  | Platform as a Service       | Develop apps without managing servers | AWS Elastic Beanstalk | आपको प्लेटफार्म मिलता है कोड रन करने के लिए     |
+| SaaS  | Software as a Service       | Use ready-made apps                   | Gmail, Google Docs    | पहले से बना सॉफ्टवेयर यूज़ करते हैं             |
+
+---
+
+### 3. **Deployment Models in Cloud:**
+
+| Model         | Description                                   | Hindi                            |
+| ------------- | --------------------------------------------- | -------------------------------- |
+| Public Cloud  | Used by many users, managed by cloud provider | AWS जैसे पब्लिक यूज़ के लिए      |
+| Private Cloud | Used by one organization                      | एक ही कंपनी के लिए खुद का क्लाउड |
+| Hybrid Cloud  | Mix of public and private                     | दोनों का मिलाजुला उपयोग          |
+
+---
+
+### 4. **IAM Service:**
+
+**English:**
+IAM (Identity and Access Management) is used to manage users and their permissions in AWS.
+
+**Hindi:**
+IAM का उपयोग AWS में यूजर और उनकी परमिशन कंट्रोल करने के लिए किया जाता है।
+
+---
+
+### 5. **Policies in IAM:**
+
+**English:**
+Policies are written rules in JSON format that define what actions are allowed or denied.
+
+**Hindi:**
+Policies JSON फॉर्मेट में लिखे गए रूल्स होते हैं जो बताते हैं कि यूजर क्या कर सकता है और क्या नहीं।
+
+---
+
+### 6. **Roles in IAM:**
+
+**English:**
+Roles are permissions you can assign to services or users temporarily.
+
+**Hindi:**
+Roles ऐसी परमिशन होती हैं जो किसी सर्विस या यूजर को अस्थाई रूप से दी जाती हैं।
+
+---
+
+### 7. **Difference: Roles vs Policies**
+
+| Feature | Roles                   | Policies                             |
+| ------- | ----------------------- | ------------------------------------ |
+| What    | Set of permissions      | Rules about what actions are allowed |
+| Use     | Given to users/services | Attached to users/roles              |
+| Hindi   | परमिशन का बंडल          | परमिशन के नियम                       |
+
+---
+
+### 8. **EC2 Service:**
+
+**English:**
+EC2 (Elastic Compute Cloud) is a virtual server that runs your applications.
+
+**Hindi:**
+EC2 एक वर्चुअल कंप्यूटर है जो आपके एप्लिकेशन को रन करता है।
+
+---
+
+### 9. **Instance Types & Purchasing Options:**
+
+| Option    | Use                                  | Hindi                                |
+| --------- | ------------------------------------ | ------------------------------------ |
+| On-Demand | Pay per hour                         | जब चाहे चलाओ, उतना ही पैसा           |
+| Reserved  | Fixed for 1 or 3 years               | लंबे समय के लिए सस्ता                |
+| Spot      | Cheapest, but can be stopped anytime | सबसे सस्ता, पर कभी भी बंद हो सकता है |
+
+---
+
+### 10. **Difference: AMI vs Snapshot**
+
+| Feature  | AMI                  | Snapshot         |
+| -------- | -------------------- | ---------------- |
+| Use      | Launch new EC2       | Backup of volume |
+| Contains | OS + App             | Only data        |
+| Hindi    | नई मशीन बनाने के लिए | डेटा का बैकअप    |
+
+---
+
+### 11. **EBS Volume Types:**
+
+| Type    | Use Case     | Hindi               |
+| ------- | ------------ | ------------------- |
+| gp3     | General      | सामान्य यूज़        |
+| io1/io2 | High IOPS    | हाई परफॉर्मेंस      |
+| st1     | Throughput   | बड़ी फाइलों के लिए  |
+| sc1     | Cold storage | कम एक्सेस वाला डेटा |
+
+---
+
+### 12. **Concept of Load Balancing:**
+
+**English:**
+Distributes incoming traffic to multiple servers for better performance and reliability.
+
+**Hindi:**
+Load balancer इनकमिंग ट्रैफिक को कई सर्वरों में बांटता है ताकि सिस्टम बेहतर और तेज़ चले।
+
+---
+
+### 13. **Difference: ALB vs NLB**
+
+| Feature | ALB                   | NLB                    |
+| ------- | --------------------- | ---------------------- |
+| Layer   | Application (Layer 7) | Network (Layer 4)      |
+| Use     | HTTP/HTTPS            | TCP/UDP                |
+| Hindi   | वेब एप्स के लिए       | लो-लेवल ट्रैफिक के लिए |
+
+---
+
+### 14. **Auto Scaling:**
+
+**English:**
+Automatically increases or decreases EC2 instances based on traffic.
+
+**Hindi:**
+Auto scaling अपने आप EC2 की संख्या बढ़ाता या घटाता है जब ट्रैफिक ज़्यादा या कम होता है।
+
+---
+
+### 15. **S3 Service & Advantages:**
+
+**English:**
+S3 (Simple Storage Service) is object storage to store any amount of data.
+
+**Hindi:**
+S3 एक object storage है जहाँ आप कितना भी डेटा स्टोर कर सकते हैं।
+
+**Advantages:**
+
+* Scalable (बढ़ाया जा सकता है)
+* Secure (सुरक्षित)
+* Fast (तेज़)
+* Cost-effective (सस्ता)
+
+---
+
+### 16. **Difference: S3 vs EBS vs EFS**
+
+| Feature | S3                | EBS               | EFS          |
+| ------- | ----------------- | ----------------- | ------------ |
+| Type    | Object            | Block             | File         |
+| Attach  | No need           | Attached to 1 EC2 | Multiple EC2 |
+| Hindi   | डेटा स्टोर के लिए | EC2 हार्ड डिस्क   | शेयर फोल्डर  |
+
+---
+
+### 17. **S3 Storage Classes:**
+
+| Class    | Use             | Hindi        |
+| -------- | --------------- | ------------ |
+| Standard | Frequent Access | बार-बार यूज़ |
+| IA       | Infrequent      | कभी-कभी यूज़ |
+| Glacier  | Archive         | बहुत कम यूज़ |
+
+---
+
+### 18. **Lifecycle Policy in S3:**
+
+**English:**
+Automatically moves objects to cheaper storage or deletes them after time.
+
+**Hindi:**
+यह नियम बनाता है जिससे फाइल्स खुद-ब-खुद सस्ते स्टोरेज में चली जाएं या डिलीट हो जाएं।
+
+---
+
+### 19. **VPC Service:**
+
+**English:**
+VPC (Virtual Private Cloud) is your own isolated network in AWS.
+
+**Hindi:**
+VPC AWS पर आपकी खुद की प्राइवेट नेटवर्क होती है जिसमें आप रिसोर्सेज चलाते हैं।
+
+---
+
+### 20. **Public vs Private Subnet:**
+
+| Feature  | Public           | Private                  |
+| -------- | ---------------- | ------------------------ |
+| Internet | Yes              | No                       |
+| Use      | Web servers      | DB servers               |
+| Hindi    | इंटरनेट से जुड़ा | प्राइवेट सिस्टम्स के लिए |
+
+---
+
+### 21. **What is NAT?**
+
+**English:**
+NAT (Network Address Translation) allows private subnets to access the internet.
+
+**Hindi:**
+NAT प्राइवेट सबनेट को इंटरनेट एक्सेस की सुविधा देता है।
+
+---
+
+### 22. **What is Peering Connection?**
+
+**English:**
+Connects two VPCs to communicate privately.
+
+**Hindi:**
+दो VPC को आपस में जोड़ने के लिए Peering इस्तेमाल होता है।
+
+---
+
+### 23. **Difference: NACL vs Security Group**
+
+| Feature   | NACL               | Security Group    |
+| --------- | ------------------ | ----------------- |
+| Level     | Subnet             | Instance          |
+| Rule Type | Stateless          | Stateful          |
+| Hindi     | सबनेट लेवल सुरक्षा | मशीन लेवल सुरक्षा |
+
+---
+
+### 24. **What is Domain Name?**
+
+**English:**
+It is the name of a website like google.com.
+
+**Hindi:**
+Website का नाम जैसे google.com को Domain Name कहते हैं।
+
+---
+
+### 25. **What is Hosted Zone?**
+
+**English:**
+Hosted zone is the DNS record area in Route 53.
+
+**Hindi:**
+Hosted zone Route 53 में DNS रिकॉर्ड्स का सेट होता है।
+
+---
+
+### 26. **Records in Route 53:**
+
+| Type  | Use        | Hindi         |
+| ----- | ---------- | ------------- |
+| A     | IP address | वेबसाइट का IP |
+| CNAME | Alias      | दुसरे नाम से  |
+| MX    | Email      | ईमेल सर्वर    |
+
+---
+
+### 27. **Routing Policies:**
+
+| Type        | Use                    | Hindi                  |
+| ----------- | ---------------------- | ---------------------- |
+| Simple      | One server             | सिंगल लोकेशन           |
+| Weighted    | Based on weight        | ट्रैफिक बाँटना         |
+| Geolocation | Based on user location | यूज़र की जगह के अनुसार |
+
+---
+
+### 28. **SSL Concept:**
+
+**English:**
+SSL (Secure Sockets Layer) encrypts data between browser and server.
+
+**Hindi:**
+SSL डेटा को encrypt करता है ताकि ब्राउज़र और सर्वर के बीच सुरक्षित रहे।
+
+---
+
+### 29. **What is CDN?**
+
+**English:**
+CDN (Content Delivery Network) delivers content quickly using nearby servers.
+
+**Hindi:**
+CDN नजदीकी सर्वर से डेटा भेजकर स्पीड बढ़ाता है।
+
+---
+
+### 30. **What is Edge Location?**
+
+**English:**
+Edge locations are servers around the world to cache content.
+
+**Hindi:**
+Edge location दुनिया भर के सर्वर होते हैं जो डेटा को cache करते हैं।
+
+---
+
+### 31. **OAI vs OAC in CloudFront:**
+
+| Feature | OAI (Old)               | OAC (New)                        |
+| ------- | ----------------------- | -------------------------------- |
+| Use     | Access S3               | Access S3 with advanced features |
+| Hindi   | CloudFront से S3 एक्सेस | अपडेटेड S3 एक्सेस तरीका          |
+
+---
+
+### 32. **What is Latency?**
+
+**English:**
+Latency is the delay in data transfer.
+
+**Hindi:**
+Latency का मतलब होता है डेटा ट्रांसफर में लगने वाला समय।
+
+---
+
